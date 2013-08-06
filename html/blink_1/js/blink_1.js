@@ -503,7 +503,7 @@ console.log("save click!");
 		if(existingObject) {
 			applyConfigurationOptions(existingObject, id, index);
 			$('#configuration-popup').addClass('existing');
-			$('#configuration-popup #submit-options-buttons input.save-as-new').val('创建触发器');	
+			$('#configuration-popup #submit-options-buttons input.save-as-new').val('新事件');	
             backendLiveValueStart( existingObject );
 		} 
 		// otherwise, we're creating a new trigger

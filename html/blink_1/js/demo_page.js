@@ -190,7 +190,7 @@ function openColorPanel() {
 /* 	resetConfigurationPanel(); */
 	$('#popup-title > input').val('彩色轮盘');
 	$('#configuration-popup').removeClass('existing').removeClass('new').addClass('demo');	
-	$('#configuration-popup #submit-options-buttons input.save-as-new').val('创建触发器');		
+	$('#configuration-popup #submit-options-buttons input.save-as-new').val('新事件');		
 	// and finally, open the panel
 	$('#gray-out').fadeIn('fast');
 	$('#configuration-popup').fadeIn('fast');
