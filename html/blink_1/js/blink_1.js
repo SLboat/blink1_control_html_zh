@@ -769,9 +769,9 @@ console.log("save click!");
 		if(swatchSelector == '.color-swatch') {	
 			$(swatchSelector).css('margin-left', margin);
 			if(numColors > 1) {
-				$('#color-selector label[for="color-swatches"] ').html('State Colors');	
+				$('#color-selector label[for="color-swatches"] ').html('颜色序列');	
 			} else {
-				$('#color-selector label[for="color-swatches"] ').html('State Color');	
+				$('#color-selector label[for="color-swatches"] ').html('设定颜色');	
 			}
 		}
 	
