@@ -1,5 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
 <!--[if lt IE 7 ]> <html xmlns="http://www.w3.org/1999/xhtml" class="ie ie6"> <![endif]-->
 <!--[if IE 7 ]> <html class="ie ie7"> <![endif]-->
 <!--[if IE 8 ]> <html xmlns="http://www.w3.org/1999/xhtml" class="ie ie8"> <![endif]-->
@@ -7,6 +7,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
 
 	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 		<title>blink(1) by ThingM</title>	
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.0.custom.min.css" />
@@ -26,27 +27,27 @@
 			<div id="main-content">
 				<div id="tabs">
 					<ul id="navbar">
-						<li id="home-tab" class="tab active"><a href="#tab-1">Home</a></li>
-						<li id="demo-tab" class="tab"><a href="#tab-2">Demo</a></li>					
-						<li id="help-tab" class="tab"><a href="help.html">Help</a></li>
+						<li id="home-tab" class="tab active"><a href="#tab-1">主页</a></li>
+						<li id="demo-tab" class="tab"><a href="#tab-2">演示</a></li>					
+						<li id="help-tab" class="tab"><a href="help.html">帮助</a></li>
 						<li id="settings-tab" class="tab"><a>&nbsp;</a></li>
 					</ul> <!-- #navbar -->	
 					<div id="tab-1">
 						<ul id="trigger-headers">
-							<li>NAME</li>
-							<li>SOURCE</li>
-							<li>PATTERN</li>								
+							<li>名称</li>
+							<li>源码</li>
+							<li>模式</li>								
 						</ul>
 
 						<div id="trigger-list">
 											</div><!-- #trigger-list --> 	
 						<div id="welcome-message">
 <!-- 							<div id="welcome-fade"></div> -->
-							<h2>嗨 看过来!</h2>
-							<p>You don't seem to have any triggers set up. Press the plus sign to get started!</p>
+							<h2>嗨！看过来</h2>
+							<p>你似乎没有任何触发装置。按下加号键开始！</p>
 						</div>
 						
-						<p id="scroll-for-more">Don't forget the rest of your triggers! <br /><span>(scroll to see more)</span></p>	
+						<p id="scroll-for-more">不要忘记其他的触发装置！<br /><span>(滚动查看更多)</span></p>	
 						<a id="add-new-trigger"><img src="images/add-button.png" /></a>	
 						
 						<div class="trigger-options" id="trigger-options-to-clone">
@@ -70,14 +71,14 @@
 						</div>
 					</div>
 					<div id="tab-2">
-						<h2>WELCOME TO THE BLINK(1) PLAYGROUND!</h2>
-						<p>Here are some preset blink(1) effects. Experiment with these to inspire you when creating your own triggers!</p>
+						<h2>欢迎来到 BLINK(1) 游乐场！</h2>
+						<p>这里是一些预置的 blink(1) 效果。当你需要创造你自己的事件时候，通过体验它们来启发你！</p>
 						<div id="demo-dark-container">
-							<div class="demo-grid-square active" id="demo-light-on">bright white</div>
-							<div class="demo-grid-square" id="demo-light-off">light off</div>
-							<div class="demo-grid-square" id="demo-rgb">RGB cycle</div>
-							<div class="demo-grid-square" id="demo-mood">mood light</div>
-							<div class="demo-grid-square" id="demo-color-picker">color picker</div>
+							<div class="demo-grid-square active" id="demo-light-on">点亮白色</div>
+							<div class="demo-grid-square" id="demo-light-off">让灯灭掉</div>
+							<div class="demo-grid-square" id="demo-rgb">RGB 循环</div>
+							<div class="demo-grid-square" id="demo-mood">心情之光</div>
+							<div class="demo-grid-square" id="demo-color-picker">挑选颜色</div>
 							<div id="demo-blink">
 								<div id="virtual-blink-demo"></div>
 								<div id="virtual-blink-overlay-demo"></div>									
@@ -97,12 +98,12 @@
 				<div class="popup-content clearfix">
 					<div class="column column-1">
 						<div id="source-selector">
-							<h4>Source</h4>
+							<h4>源码</h4>
 							<div class="options-group">
 								<input type="radio" name="source-options" value="ifttt" id="source-option-ifttt"><label for="source-option-ifttt">IFTTT</label><br />
-								<input type="radio" name="source-options" value="url" id="source-option-url"><label for="source-option-url">Web Page URL</label><br />	
-								<input type="radio" name="source-options" value="file" id="source-option-file"><label for="source-option-file">File</label><br />
-								<input type="radio" name="source-options" value="script" id="source-option-script"><label for="source-option-script">Script</label>
+								<input type="radio" name="source-options" value="url" id="source-option-url"><label for="source-option-url">网址</label><br />	
+								<input type="radio" name="source-options" value="file" id="source-option-file"><label for="source-option-file">文件</label><br />
+								<input type="radio" name="source-options" value="script" id="source-option-script"><label for="source-option-script">脚本</label>
 							</div> <!-- .options-group -->	
 						</div> <!-- #source-selector -->		
 						<div id="virtual-blink-container">
@@ -112,26 +113,26 @@
 					</div> <!-- .column-1 -->		
 					<div class="column column-2">
 						<div id="ifttt-options-selector" class="ifttt">
-							<h4>IFTTT Rule Name</h4>
-							<input id="ifttt-rulename" type="text" class="arg1" placeholder="enter rule name here" /> 
-                            <span class="medium"> Previous rule names seen: </span>
-                            <span id="value-retrieved-possibles" class="light" >-none-</span> <br/>
-							<span class="light">from source:</span>
-                            <span class="light" id="value-retrieved-text-box">[no source]</span> <br/>
-                            <span id="value-retrieved-timestamp" class="light">received n/a mins ago</span><br/>
+							<h4>IFTTT 规则名称</h4>
+							<input id="ifttt-rulename" type="text" class="arg1" placeholder="在这里输入规则名称" /> 
+                            <span class="medium"> 参见以前的规则名称: </span>
+                            <span id="value-retrieved-possibles" class="light" >-没有-</span> <br/>
+							<span class="light">来自源码:</span>
+                            <span class="light" id="value-retrieved-text-box">[没有源码]</span> <br/>
+                            <span id="value-retrieved-timestamp" class="light">n/a 分钟前收到</span><br/>
                      <!--<span id="ifttt-event-received-icon" ><img align="center" src="images/icon-ok.png" /></span>-->
                      <!-- <input id="value-retrieved-text-box" type="text" value="color value retrieved"/>-->
-                             <p class="description">Add your rule name to IFTTT.com recipe.</p>
-<p class="description">Configure IFTTT blink(1) channel with IFTTT Key
+                             <p class="description">向 IFTTT.com 窍门 添加你的规则名称</p>
+<p class="description">使用 IFTTT 密钥配置 IFTTT blink(1) 频道
 <span style="font-weight:bold; color:#666; font-size: 16px; line-height: 20px;" id="ifttt-uid">DEADBEEF12341234</span><br />
 </p>
-                             <p class="description">IFTTT checked every 15 secs
+                             <p class="description">每 15 秒执行一次 IFTTT 检查
 							</p>
 						</div>
 
 						<div id="url-options-selector" class="url">
-							<h4>URL</h4>
-							<input id="web-page-url" type="text" class="arg1" placeholder="enter url here" />
+							<h4>网址</h4>
+							<input id="web-page-url" type="text" class="arg1" placeholder="在这里输入网址" />
 <!-- 
                                <p>
 								<input type="radio" name="url-color-options" value="user-specified" id="url-color-options-user-specified"/ checked="checked" ><label for="url-color-options-user-specified">Use color pattern</label> <br />
@@ -139,17 +140,17 @@
 							</p>
 -->
 							<p>
-								<label for="value-retrieved-text-box">Value Retrieved</label>
-								<input id="value-retrieved-text-box" type="text" value="color value retrieved…"/>
+								<label for="value-retrieved-text-box">检索值</label>
+								<input id="value-retrieved-text-box" type="text" value="颜色检索值"/>
 							</p>
                              <p class="description">
-URL response is searched for hex color code (eg #ffcc00). First one found is played on blink(1). <br/>
-URLs checked every 15 secs.
+网址响应被用来搜索十六进制颜色代码(如 #ffcc00)。第一个找到的会被运行在 blink(1) 上。<br/>
+每 15 秒检查一次网址。
 							</p>
 						</div>
 						<div id="file-options-selector" class="file">
-							<h4>FILE</h4>
-							<input type="text" id="file-path" class="arg1" placeholder="enter file path here" />
+							<h4>文件</h4>
+							<input type="text" id="file-path" class="arg1" placeholder="在这里输入文件路径" />
 <!-- 
 							<p>
 								<input type="radio" name="file-color-options" value="user-specified" id="file-color-options-user-specified"/ checked="checked" ><label for="file-color-options-user-specified">Use color pattern</label><br />
@@ -157,17 +158,17 @@ URLs checked every 15 secs.
 							</p>
 -->
 							<p>
-								<label for="value-retrieved-text-box">Value Retrieved</label>
-								<input id="value-retrieved-text-box" type="text" value="color value retrieved…"/>
+								<label for="value-retrieved-text-box">检索值</label>
+								<input id="value-retrieved-text-box" type="text" value="颜色检索值"/>
 							</p>
                              <p class="description">
-File content is inspected for hex color code (eg #ffcc00). First one found is played on blink(1). <br/>
-Files checked every 15 secs.
+文件内容被用来检查十六进制颜色代码(如 #ffcc00)。<br/>
+每 15 秒检查一次文件。
 							</p>
 						</div>
 						<div id="script-options-selector" class="script">
-							<h4>SCRIPT</h4>
-							<input type="text" id="script-path" class="arg1" placeholder="enter script path here" />
+							<h4>脚本</h4>
+							<input type="text" id="script-path" class="arg1" placeholder="在这里输入脚本路径" />
 <!-- 
 							<p>
 								<input type="radio" name="script-color-options" value="user-specified" id="script-color-options-user-specified"/ checked="checked" ><label for="script-color-options-user-specified">Specify color pattern</label><br />
@@ -175,21 +176,21 @@ Files checked every 15 secs.
 							</p>
 -->
 							<p>
-								<label for="value-retrieved-text-box">Value Retrieved</label>
-								<input id="value-retrieved-text-box" type="text" value="color value retrieved…"/>
+								<label for="value-retrieved-text-box">检索值</label>
+								<input id="value-retrieved-text-box" type="text" value="颜色检索值"/>
                             </p>
 							<p class="description">
-Script is executed and inspected for hex color code (eg #ffcc00) to play on blink(1). </p>
+脚本被用来执行和检查十六进制颜色代码(如 #ffcc00)来运行在 blink(1)上。</p>
 							<p class="description">
-Scripts must live in ~/Documents/blink1-scripts <br/>
-Scripts executed every 5 secs. </p>
+脚本必须存在于 ~/Documents/blink1-scripts <br/>
+每 5 秒执行一次脚本。</p>
 						</div>
 					</div>	<!-- .column-2 -->				
 					<div class="column column-3">
 						<div id="behavior-selector">
-							<h4>Behavior</h4>
+							<h4>属性</h4>
 							<select>
-								<option value="exact-color">Exact Color</option>
+								<option value="exact-color">要求颜色</option>
 <!--
 								<option value="change-brightness" disabled="disabled">Change Brightness</option>
 								<option value="change-hue" disabled="disabled">Change Hue</option>
@@ -198,7 +199,7 @@ Scripts executed every 5 secs. </p>
 							</select>
 						</div> 
 						<div id="color-selector">
-							<h4>Colors</h4>	
+							<h4>颜色</h4>	
 							<label for="number-of-colors-group"># of Colors</label>
 							<select id="number-of-colors-group">
 								<option value="1">1</option>
@@ -209,7 +210,7 @@ Scripts executed every 5 secs. </p>
 								<option value="6">6</option>											
 								<option value="7">7</option>
 							</select>
-							<label for="color-swatches" title="drag and drop swatches to reorder">State Color</label>		
+							<label for="color-swatches" title="drag and drop swatches to reorder">规定颜色</label>		
 							<div id="color-swatches" class="clearfix">
 								<ul id="color-swatches-container" class="clearfix">
 									<li id="color-1" class="color-swatch active" data-xPos="61px" data-yPos="-190px">1.0</li>
@@ -222,25 +223,25 @@ Scripts executed every 5 secs. </p>
 								</ul>																	
 							</div>				
 							<div id="repeat-options">
-								<label for="repeat-options-group">Run Pattern</label>
+								<label for="repeat-options-group">运行模式</label>
 								<select id="repeat-options-group">
-									<option value="1">1 time only</option>
-									<option value="2">2 times</option>
-									<option value="3">3 times</option>
-									<option value="4">4 times</option>
-									<option value="5">5 times</option>
-									<option value="6">6 times</option>
-									<option value="7">7 times</option>
-									<option value="8">8 times</option>
-									<option value="9">9 times</option>
-									<option value="10">10 times</option>								
+									<option value="1">1 次</option>
+									<option value="2">2 次</option>
+									<option value="3">3 次</option>
+									<option value="4">4 次</option>
+									<option value="5">5 次</option>
+									<option value="6">6 次</option>
+									<option value="7">7 次</option>
+									<option value="8">8 次</option>
+									<option value="9">9 次</option>
+									<option value="10">10 次</option>								
 								</select>
 							</div>	
 							<div id="transition-options">
 								<input type="radio" name="flash-or-fade" id="fade" value="fade" checked="checked" />
-								<label for="fade">Fade</label>	
+								<label for="fade">褪色</label>	
 								<input type="radio" name="flash-or-fade" id="flash" value="flash" />
-								<label for="flash">Flash</label>
+								<label for="flash">闪光</label>
 							</div>						
 	
 							
@@ -256,24 +257,24 @@ Scripts executed every 5 secs. </p>
 			</div> <!-- #configuration-popup -->
 			<div id="settings-popup" class="popup-window">
 				<div class="popup-header">
-					<h2>blink(1) settings</h2>
+					<h2>blink(1) 设置</h2>
 					<a class="cancel"></a>
 				</div>	
 				<div class="popup-content">
-					<h3>STATUS</h3>
-					<p id="about-status">Awesome</p>
+					<h3>状态</h3>
+					<p id="about-status">正常</p>
 
-					<h3>ABOUT THIS BLINK(1)</h3>
-					<p class="about-info">Serial Number: <span id="about-serial-number">ABCDEF</span> </p>
-					<p class="about-info">IFTTT Key: <span id="about-ifttt-uid">CAFEBABE56785678</span><p>
+					<h3>关于这个 BLINK(1)</h3>
+					<p class="about-info">序列号: <span id="about-serial-number">ABCDEF</span> </p>
+					<p class="about-info">IFTTT 密钥: <span id="about-ifttt-uid">CAFEBABE56785678</span><p>
 
-					<h3>LICENSE AND SOURCE CODE</h3>
-					<p>blink(1) is an Open Source Hardware product licensed under the LGPL license.</p>
-					<p>You may obtain the source code to all the software used in it and digital files for the hardware components on github.</p>
-					<p>We are totally not responsible for anything you do with it.</p>
-					<p>blink(1) is a registered trademark of ThingM Corporation.</p>
+					<h3>授权和源代码</h3>
+					<p>blink(1) 是一个基于 LGPL 授权协议的开源硬件产品。</p>
+					<p>你可以在 Github 得到软件所有的源代码和给硬件使用的数字文件。</p>
+					<p>我们对你的用它做的任何事情不负任何责任。</p>
+					<p>blink(1) 是 ThingM 公司的注册商标。</p>
 
-                    <p><br/><a id="delete-all-triggers">[delete all triggers]</a></p>
+                    <p><br/><a id="delete-all-triggers">[删除所有触发装置]</a></p>
 
 				</div><!-- .popup-content -->
 			</div> <!-- #settings-popup -->
@@ -284,9 +285,9 @@ Scripts executed every 5 secs. </p>
 				</div>	
 				<div id="picker-swatches">
 <!-- 					<p>Swatches</p> -->
-					<div id="bright-white" class="picker-swatch"><p>white light</p></div>
-					<div id="light-off" class="picker-swatch"><p>light off</p></div>
-					<input id="duration-setting" type="number" min="0" value="1" step="0.5"/><label for="duration-setting">seconds</label>					
+					<div id="bright-white" class="picker-swatch"><p>白色的灯</p></div>
+					<div id="light-off" class="picker-swatch"><p>让等灭掉</p></div>
+					<input id="duration-setting" type="number" min="0" value="1" step="0.5"/><label for="duration-setting">秒</label>					
 				</div>
 				<div id="color-display">
 					<div id="color-zoom"></div>
