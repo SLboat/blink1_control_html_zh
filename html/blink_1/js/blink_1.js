@@ -726,7 +726,7 @@ console.log("save click!");
 		
 		
 		$('#configuration-popup input[type="text"] ').val('');
-		$('#popup-title input').val('[点击这里编辑标题]');		
+		$('#popup-title input').val('[鐐瑰嚮杩欓噷缂栬緫鏍囬]');		
 		// uncheck all source radio buttons
 		$('#configuration-popup #source-selector input[type="radio"] ').removeAttr('checked');
 
@@ -850,7 +850,7 @@ function compileSettings() {
     }
 
 
-	if($('#popup-title > input').val() == '' || $('#popup-title > input').val() == '[点击这里编辑标题]') {
+	if($('#popup-title > input').val() == '' || $('#popup-title > input').val() == '[鐐瑰嚮杩欓噷缂栬緫鏍囬]') {
         var randid = Math.floor((Math.random()*100)+1);  // if no title, make up a random one
 		newSettings.title = 'Untitled'+ randid +'';
 	}
