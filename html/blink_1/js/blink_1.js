@@ -852,7 +852,7 @@ function compileSettings() {
 
 	if($('#popup-title > input').val() == '' || $('#popup-title > input').val() == '[点击以编辑标题]') {
         var randid = Math.floor((Math.random()*100)+1);  // if no title, make up a random one
-		newSettings.title = 'Untitled'+ randid +'';
+		newSettings.title = '未命名'+ randid +'';
 	}
 	else {
 		newSettings.title = $('#popup-title > input').val();						
