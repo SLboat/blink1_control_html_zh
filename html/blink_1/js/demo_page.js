@@ -188,9 +188,9 @@ function runDemoEffect(demoName) {
 function openColorPanel() {
 	// hide configuration related columns to use as blank color picker
 /* 	resetConfigurationPanel(); */
-	$('#popup-title > input').val('Color Picker');
+	$('#popup-title > input').val('彩色轮盘');
 	$('#configuration-popup').removeClass('existing').removeClass('new').addClass('demo');	
-	$('#configuration-popup #submit-options-buttons input.save-as-new').val('new trigger');		
+	$('#configuration-popup #submit-options-buttons input.save-as-new').val('创建触发器');		
 	// and finally, open the panel
 	$('#gray-out').fadeIn('fast');
 	$('#configuration-popup').fadeIn('fast');

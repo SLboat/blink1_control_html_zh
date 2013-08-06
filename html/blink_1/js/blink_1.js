@@ -503,7 +503,7 @@ console.log("save click!");
 		if(existingObject) {
 			applyConfigurationOptions(existingObject, id, index);
 			$('#configuration-popup').addClass('existing');
-			$('#configuration-popup #submit-options-buttons input.save-as-new').val('create new');	
+			$('#configuration-popup #submit-options-buttons input.save-as-new').val('创建触发器');	
             backendLiveValueStart( existingObject );
 		} 
 		// otherwise, we're creating a new trigger
@@ -512,7 +512,7 @@ console.log("save click!");
 			resetConfigurationPanel();
 			logSettings();
 			$('#configuration-popup').addClass('new');	
-			$('#configuration-popup #submit-options-buttons input.save-as-new').val('save');
+			$('#configuration-popup #submit-options-buttons input.save-as-new').val('保存');
             setTimeout( "console.log('todfoo'); $('#source-option-ifttt').click();", 200); // FIXME: super hack to default to IFTTT on new 
 		}
 		// and finally, open the panel
@@ -637,9 +637,9 @@ console.log("save click!");
                     console.log("lastTime: "+lastTime+", now: "+ nowTime +", dt:"+(nowTime-lastTime));
                     var minsago = ((new Date().getTime()/1000 - lastTime )/60).toFixed(1);
                     minsago = (isNaN(minsago)) ? 'n/a' : minsago;
-                    possibleVals = (possibleVals!=null && possibleVals.length) ? possibleVals.toString() : '-none-';
+                    possibleVals = (possibleVals!=null && possibleVals.length) ? possibleVals.toString() : '-无-';
 
-                    $('.ifttt #value-retrieved-timestamp').text("received " + minsago + " mins ago" );
+                    $('.ifttt #value-retrieved-timestamp').text(minsago + " 分钟前接收到" );
                     $('.ifttt #value-retrieved-text-box').text( lastVal );
                     $('.ifttt #value-retrieved-possibles').text( possibleVals );
                 }
@@ -654,11 +654,11 @@ console.log("save click!");
         var b1url = '../blink1/id';
         $.getJSON( b1url, function(result) { 
                 var serialnums = result.blink1_serialnums;
-                blink1Settings.statustext = "no blink(1) found";
-                blink1Settings.serialnum = "-none-";
+                blink1Settings.statustext = "没有找到 blink(1)";
+                blink1Settings.serialnum = "-无-";
                 blink1Settings.blink1_id = result.blink1_id;
                 if( serialnums.length > 0 ) { 
-                    blink1Settings.statustext = "Connected!";
+                    blink1Settings.statustext = "已连接！";
                     blink1Settings.serialnum = serialnums[0];
                 }
             });
@@ -726,7 +726,7 @@ console.log("save click!");
 		
 		
 		$('#configuration-popup input[type="text"] ').val('');
-		$('#popup-title input').val('[点击这里编辑标题]');		
+		$('#popup-title input').val('[点击以编辑标题]');		
 		// uncheck all source radio buttons
 		$('#configuration-popup #source-selector input[type="radio"] ').removeAttr('checked');
 
@@ -850,7 +850,7 @@ function compileSettings() {
     }
 
 
-	if($('#popup-title > input').val() == '' || $('#popup-title > input').val() == '[点击这里编辑标题]') {
+	if($('#popup-title > input').val() == '' || $('#popup-title > input').val() == '[点击以编辑标题]') {
         var randid = Math.floor((Math.random()*100)+1);  // if no title, make up a random one
 		newSettings.title = 'Untitled'+ randid +'';
 	}

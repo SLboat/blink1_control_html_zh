@@ -21,7 +21,7 @@
 	<body>
 		<div id="container">
 			<div id="header">
-				<a href="."><h1>blink(1)</h1></a>
+				<a href="."><h1>blink(1)</h1><p>红绿蓝小灯</p></a>
 				<a href=".">by ThingM</a>
 			</div> <!-- #header -->
 			<div id="main-content">
@@ -250,7 +250,7 @@
 					<div id="submit-options-buttons">
 <!-- 						<input type="button" value="test" class="save-button test" />  -->
 						<input type="button" value="保存" class="save-button save-changes" />
-						<input type="button" value="创建新的" class="save-button save-as-new" />
+						<input type="button" value="创建触发器" class="save-button save-as-new" />
 					</div>	
 					<a class="cancel"></a>	
 				</div> <!-- .popup-content -->
@@ -291,13 +291,13 @@
 				</div>
 				<div id="color-display">
 					<div id="color-zoom"></div>
-					<p id="rgb">R: <input type="number" max="255" min="0" id="r" value="255"/> G: <input type="number" max="255" min="0" id="g" value="255"/> B: <input type="number" max="255" min="0" id="b" value="255"/></p>
+					<p id="rgb">R: <input type="number" size = "12" max="255" min="0" id="r" value="255"/> G: <input type="number" max="255" size = "12" min="0" id="g" value="255"/> B: <input type="number" size = "12" max="255" min="0" id="b" value="255"/></p>
 					<input type="range" id="darkness-range" max="60" value="60" />
 				</div>
 
 				<!-- <p class="instructions">user slider to control darkness</p> -->
-				<a class="done" id="done-color">Done</a>
-				<a class="cancel">Cancel</a>
+				<a class="done" id="done-color">完成</a>
+				<a class="cancel">取消</a>
 			</div> <!-- #picker -->
 		</div> <!-- #container -->
 		
