@@ -143,6 +143,7 @@ span.medium {
 
 
 #header {
+	font-family: "Coder's Crux Regular";
 	width: 778px;
 	height: 72px;
 	background: #E6E6E6;
@@ -151,7 +152,7 @@ span.medium {
 }
 
 	#header h1 {
-		font-family: "微软雅黑", "Coder's Crux Regular";
+		font-family: "Coder's Crux Regular";
 		font-size: 58px;
 		font-weight: normal;
 		line-height: 44px;

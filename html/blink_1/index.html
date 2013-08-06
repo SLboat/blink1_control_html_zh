@@ -35,7 +35,7 @@
 					<div id="tab-1">
 						<ul id="trigger-headers">
 							<li>名称</li>
-							<li>源码</li>
+							<li>来源</li>
 							<li>模式</li>								
 						</ul>
 
@@ -66,19 +66,19 @@
 									<li class="repeat-option true"></li>			
 								</ul>											
 							</div>	
-							<input type="button" value="Edit" class="edit-trigger-button" />
+							<input type="button" value="编辑" class="edit-trigger-button" />
 							<a class="delete-trigger" title="delete trigger">&nbsp;</a>							
 						</div>
 					</div>
 					<div id="tab-2">
 						<h2>欢迎来到 BLINK(1) 游乐场！</h2>
-						<p>这里是一些预置的 blink(1) 效果。当你需要创造你自己的事件时候，通过体验它们来启发你！</p>
+						<p>这里是一些预置的 blink(1) 效果。当你需要创建新事件的时候，试试它们，带来更多的灵感！</p>
 						<div id="demo-dark-container">
-							<div class="demo-grid-square active" id="demo-light-on">点亮白色</div>
-							<div class="demo-grid-square" id="demo-light-off">让灯灭掉</div>
-							<div class="demo-grid-square" id="demo-rgb">RGB 循环</div>
+							<div class="demo-grid-square active" id="demo-light-on">点亮小灯</div>
+							<div class="demo-grid-square" id="demo-light-off">回归黑暗</div>
+							<div class="demo-grid-square" id="demo-rgb">颜色循环</div>
 							<div class="demo-grid-square" id="demo-mood">心情之光</div>
-							<div class="demo-grid-square" id="demo-color-picker">挑选颜色</div>
+							<div class="demo-grid-square" id="demo-color-picker">彩色轮盘</div>
 							<div id="demo-blink">
 								<div id="virtual-blink-demo"></div>
 								<div id="virtual-blink-overlay-demo"></div>									
@@ -93,7 +93,7 @@
 			<div id="gray-out">&nbsp;</div>
 			<div id="configuration-popup" class="popup-window">
 				<div class="popup-header">
-					<h2 id="popup-title"><input type="text" placeholder="Enter New Trigger Name" /></h2>
+					<h2 id="popup-title"><input type="text" placeholder="输入新触发器的名称" /></h2>
 				</div>
 				<div class="popup-content clearfix">
 					<div class="column column-1">
@@ -116,13 +116,13 @@
 							<h4>IFTTT 规则名称</h4>
 							<input id="ifttt-rulename" type="text" class="arg1" placeholder="在这里输入规则名称" /> 
                             <span class="medium"> 参见以前的规则名称: </span>
-                            <span id="value-retrieved-possibles" class="light" >-没有-</span> <br/>
+                            <span id="value-retrieved-possibles" class="light" >-无-</span> <br/>
 							<span class="light">来自源码:</span>
                             <span class="light" id="value-retrieved-text-box">[没有源码]</span> <br/>
                             <span id="value-retrieved-timestamp" class="light">n/a 分钟前收到</span><br/>
                      <!--<span id="ifttt-event-received-icon" ><img align="center" src="images/icon-ok.png" /></span>-->
                      <!-- <input id="value-retrieved-text-box" type="text" value="color value retrieved"/>-->
-                             <p class="description">向 IFTTT.com 窍门 添加你的规则名称</p>
+                             <p class="description">在 IFTTT.com 中添加你的规则名称</p>
 <p class="description">使用 IFTTT 密钥配置 IFTTT blink(1) 频道
 <span style="font-weight:bold; color:#666; font-size: 16px; line-height: 20px;" id="ifttt-uid">DEADBEEF12341234</span><br />
 </p>
@@ -144,7 +144,7 @@
 								<input id="value-retrieved-text-box" type="text" value="颜色检索值"/>
 							</p>
                              <p class="description">
-网址响应被用来搜索十六进制颜色代码(如 #ffcc00)。第一个找到的会被运行在 blink(1) 上。<br/>
+网址响应被用来搜索十六进制颜色代码(如 #ffcc00)。 blink(1)将会从第一个结果开始变色。<br/>
 每 15 秒检查一次网址。
 							</p>
 						</div>
@@ -182,7 +182,7 @@
 							<p class="description">
 脚本被用来执行和检查十六进制颜色代码(如 #ffcc00)来运行在 blink(1)上。</p>
 							<p class="description">
-脚本必须存在于 ~/Documents/blink1-scripts <br/>
+脚本必须存在于 ~/Documents/blink1-scripts 中。<br/>
 每 5 秒执行一次脚本。</p>
 						</div>
 					</div>	<!-- .column-2 -->				
@@ -200,7 +200,7 @@
 						</div> 
 						<div id="color-selector">
 							<h4>颜色</h4>	
-							<label for="number-of-colors-group"># of Colors</label>
+							<label for="number-of-colors-group">颜色的编号</label>
 							<select id="number-of-colors-group">
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -225,7 +225,7 @@
 							<div id="repeat-options">
 								<label for="repeat-options-group">运行模式</label>
 								<select id="repeat-options-group">
-									<option value="1">1 次</option>
+									<option value="1">只有 1 次</option>
 									<option value="2">2 次</option>
 									<option value="3">3 次</option>
 									<option value="4">4 次</option>
@@ -239,9 +239,9 @@
 							</div>	
 							<div id="transition-options">
 								<input type="radio" name="flash-or-fade" id="fade" value="fade" checked="checked" />
-								<label for="fade">褪色</label>	
+								<label for="fade">淡出</label>	
 								<input type="radio" name="flash-or-fade" id="flash" value="flash" />
-								<label for="flash">闪光</label>
+								<label for="flash">闪烁</label>
 							</div>						
 	
 							
@@ -249,8 +249,8 @@
 					</div>	<!-- .column-3 -->		
 					<div id="submit-options-buttons">
 <!-- 						<input type="button" value="test" class="save-button test" />  -->
-						<input type="button" value="save" class="save-button save-changes" />
-						<input type="button" value="create new" class="save-button save-as-new" />
+						<input type="button" value="保存" class="save-button save-changes" />
+						<input type="button" value="创建新的" class="save-button save-as-new" />
 					</div>	
 					<a class="cancel"></a>	
 				</div> <!-- .popup-content -->
@@ -270,8 +270,8 @@
 
 					<h3>授权和源代码</h3>
 					<p>blink(1) 是一个基于 LGPL 授权协议的开源硬件产品。</p>
-					<p>你可以在 Github 得到软件所有的源代码和给硬件使用的数字文件。</p>
-					<p>我们对你的用它做的任何事情不负任何责任。</p>
+					<p>你可以在 Github 得到软件所有的源代码和给硬件的数字文件。</p>
+					<p>我们对你使用它所做的任何事情不负任何责任。</p>
 					<p>blink(1) 是 ThingM 公司的注册商标。</p>
 
                     <p><br/><a id="delete-all-triggers">[删除所有触发装置]</a></p>
@@ -285,8 +285,8 @@
 				</div>	
 				<div id="picker-swatches">
 <!-- 					<p>Swatches</p> -->
-					<div id="bright-white" class="picker-swatch"><p>白色的灯</p></div>
-					<div id="light-off" class="picker-swatch"><p>让等灭掉</p></div>
+					<div id="bright-white" class="picker-swatch"><p>点亮小灯</p></div>
+					<div id="light-off" class="picker-swatch"><p>回归黑暗</p></div>
 					<input id="duration-setting" type="number" min="0" value="1" step="0.5"/><label for="duration-setting">秒</label>					
 				</div>
 				<div id="color-display">
