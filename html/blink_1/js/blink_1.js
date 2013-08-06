@@ -218,7 +218,7 @@ $("#tabs #navbar a").removeData("cache.tabs");
 
 
 	$('#configuration-popup .save-button').live('click', function(e) {
-console.log("save click!");
+console.log("点击了保存按钮!");
 		closeConfigurationPanel();
         
 		// get all the settings we just configured wrapped into a nice little object
@@ -229,9 +229,9 @@ console.log("save click!");
 		/*------if we're CREATING A NEW TRIGGER------*/
 		
 		if($(this).hasClass('save-as-new')) {
-
-            if( $(this).val() != 'save' ) { // FIXME: super big hack
-                settings.title = settings.title + " copy";
+			// SLboat: 这里与翻译字关联了
+            if( $(this).val() != '保存' ) { // FIXME: super big hack
+                settings.title = settings.title + " 克隆";
             }
             addNewTrigger(settings);
 
