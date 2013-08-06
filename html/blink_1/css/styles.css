@@ -17,7 +17,7 @@
 }
 
 body {
-	font-family: "微软雅黑", "HelveticaNeue-CondensedBold", "HelveticaNeue-BoldCondensed", "Helvetica Neue Bold Condensed", "Helvetica Neue", "Helvetica Bold Condensed", "Arial Narrow", "Arial", sans-serif;
+	font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue-BoldCondensed", "Helvetica Neue Bold Condensed", "Helvetica Neue", "Helvetica Bold Condensed", "Arial Narrow", "Arial", sans-serif;
 	font-weight:600;
 	font-stretch:condensed;
 /* 	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", 'Helvetica', Arial, sans-serif; */
@@ -28,14 +28,14 @@ body {
 }
 
 input {
-	font-family: "微软雅黑", "HelveticaNeue-CondensedBold", "HelveticaNeue-BoldCondensed", "Helvetica Neue Bold Condensed", "Helvetica Neue", "Arial Narrow", "Arial", sans-serif;
+	font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue-BoldCondensed", "Helvetica Neue Bold Condensed", "Helvetica Neue", "Arial Narrow", "Arial", sans-serif;
 	font-weight:600;
 	font-stretch:condensed;
 	font-size: 15px;	
 }
 
 select, option {
-	font-family: "微软雅黑", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-size: .8em;
 }
 
@@ -64,7 +64,7 @@ a {
 	}
 	
 	a.cancel {
-		font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-size: 12px;
 		text-decoration: underline;
 		font-weight: normal;
@@ -72,7 +72,7 @@ a {
 	}
 	
 p {
-	font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 	font-stretch: normal;
 	font-size: 13px;
 	font-weight: normal;
@@ -91,7 +91,7 @@ p span.light {
 	}
 
 span.light {
-		font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-weight: normal;
 		color: #999;
 		font-size: 12px;
@@ -106,7 +106,7 @@ span.light {
 	}
 	
 span.medium {
-		font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		color: #666;
 		font-size: 12px;
@@ -143,7 +143,6 @@ span.medium {
 
 
 #header {
-	font-family: "Coder's Crux Regular";
 	width: 778px;
 	height: 72px;
 	background: #E6E6E6;
@@ -366,7 +365,7 @@ display: block;
 					font-weight: normal;
 					text-align: center;
 					line-height: 62px;
-					font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+					font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 					color: #ccc;
 				}
 				
@@ -458,7 +457,7 @@ display: block;
 			width: 718px;
 			margin: 0 auto;
 			display: none;
-			font-family: "微软雅黑", "HelveticaNeue-CondensedBold", "Helvetica Neue", "HelveticaNeue", sans-serif;
+			font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", "HelveticaNeue", sans-serif;
 			font-size: 17px;
 			padding-top: 32px;
 			box-shadow: 1px -8px 13px -6px #EEE;
@@ -467,7 +466,7 @@ display: block;
 		
 			#main-content #scroll-for-more span {
 				font-size: 12px;
-				font-family:"微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+				font-family:"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 				color: #999;
 			}
 		
@@ -615,7 +614,7 @@ display: block;
     }
 	
 	#configuration-popup label {
-		font-family:"微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family:"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-weight: normal;
 		font-size: 11px;
 		color: #666;
@@ -735,7 +734,7 @@ display: block;
     	width: 168px;
     	height: 18px;
     	padding: 0px 8px 6px;
-    	font-family:"微软雅黑",  "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     	font-size: 12px;
     	font-weight: normal;
     	border: 4px solid transparent;
@@ -793,7 +792,7 @@ display: block;
 		padding: 5px 8px;
 		border: 1px solid #999;
 		-webkit-appearance: none;
-		font-family:"微软雅黑",  "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     	font-size: 12px;
     	font-weight: normal;
     	width: 146px;
@@ -897,7 +896,7 @@ display: block;
 		padding: 0px 5px;
 		border: 1px solid #999;
 		line-height: 1em;
-		font-family:"微软雅黑",  "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-size: 11px;
 		font-weight: normal;
 		margin-left: 4px;
@@ -916,7 +915,7 @@ display: block;
 		display: inline-block;
 		font-size: 22px;
 		margin-top: 16px;
-		font-family: "微软雅黑", "HelveticaNeue-CondensedBold", "Helvetica Neue", "HelveticaNeue", sans-serif;
+		font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", "HelveticaNeue", sans-serif;
 		font-weight: bold;
 		color: #444;
 		margin-bottom: 0;
@@ -988,7 +987,7 @@ display: block;
 			font-weight: normal;
 			text-align: center;
 			line-height: 62px;
-			font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+			font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 			color: #999;
 		}
 		
@@ -1135,7 +1134,7 @@ display: block;
 			}	
 
 	#picker  input#duration-setting {
-			font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+			font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 			font-stretch: normal;
 			font-size: 16px;
 			width: 46px;
@@ -1150,7 +1149,7 @@ display: block;
 		}		
 
 	#picker  label[for="duration-setting"]  {
-		font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-stretch: normal;
 		font-size: 11px;
 		color: #aaa;
@@ -1257,7 +1256,7 @@ display: block;
 			
 		#picker #color-display .picker-swatch p {
 			position: relative;
-			font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+			font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 			font-stretch: normal;
 			font-weight: normal;
 			font-size: 10px;
@@ -1276,7 +1275,7 @@ display: block;
 				background: #fff;
 			}
 	#picker p.instructions {
-		font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-size: 11px;
 		font-weight: normal;
 		text-align: center;
@@ -1372,7 +1371,7 @@ div#gradient-circle-container #gradient-circle {
 	}
 
 	#settings-popup p {
-		font-family: "微软雅黑", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 		font-size: 12px;
 		font-weight: normal;
 		line-height: 14px;
@@ -1707,4 +1706,4 @@ html[xmlns] .clearfix {
 
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
 
-	@font-face {font-family:"微软雅黑", "Coder's Crux Regular";src:url("../fonts/coders_crux/coders_crux.eot?") format("eot"),url("../fonts/coders_crux/coders_crux.woff") format("woff"),url("../fonts/coders_crux/coders_crux.ttf") format("truetype"),url("../fonts/coders_crux/coders_crux.svg#Coder's-Crux") format("svg");font-weight:normal;font-style:normal;}
+	@font-face {font-family:"Coder's Crux Regular";src:url("../fonts/coders_crux/coders_crux.eot?") format("eot"),url("../fonts/coders_crux/coders_crux.woff") format("woff"),url("../fonts/coders_crux/coders_crux.ttf") format("truetype"),url("../fonts/coders_crux/coders_crux.svg#Coder's-Crux") format("svg");font-weight:normal;font-style:normal;}
